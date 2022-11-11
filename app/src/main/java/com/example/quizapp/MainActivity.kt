@@ -6,6 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.getValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.compose.rememberNavController
+import com.example.quizapp.navigation.SetupNavGraph
+import com.example.quizapp.ui.theme.QuizAppTheme
+import com.example.quizapp.viewmodel.SplashViewModel
 import com.google.accompanist.pager.ExperimentalPagerApi
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -25,7 +29,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            OnBoardingComposeTheme {
+            QuizAppTheme() {
                 val screen by splashViewModel.startDestination
                 val navController = rememberNavController()
                 SetupNavGraph(navController = navController, startDestination = screen)
