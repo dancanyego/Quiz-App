@@ -27,7 +27,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.quizapp.ui.theme.Purple700
 
 @Composable
-fun LoginPage(navController: NavHostController) {
+fun SignUpPage(navController: NavHostController) {
     Box(modifier = Modifier.fillMaxSize()) {
         ClickableText(
             text = AnnotatedString("Sign up here"),
@@ -77,13 +77,13 @@ fun LoginPage(navController: NavHostController) {
                     .fillMaxWidth()
                     .height(50.dp)
             ) {
-                Text(text = "Login")
+                Text(text = "Submit")
             }
         }
 
         Spacer(modifier = Modifier.height(20.dp))
         ClickableText(
-            text = AnnotatedString("Forgot password?"),
+            text = AnnotatedString("Login Here"),
             onClick = { },
             style = TextStyle(
                 fontSize = 14.sp,
@@ -93,4 +93,15 @@ fun LoginPage(navController: NavHostController) {
     }
 }
 
+@Composable
+@Preview
+
+fun SignUpPreview(){
+    SignUpPage()
+}
+
+fun SignUpPage() {
+    TODO("Not yet implemented")
+
+}
 
