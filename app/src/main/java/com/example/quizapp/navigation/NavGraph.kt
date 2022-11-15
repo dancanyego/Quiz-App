@@ -6,6 +6,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.quizapp.screen.HomeScreen
+import com.example.quizapp.screen.Quiz_Categories
+import com.example.quizapp.screen.SignUpScreen
 import com.example.quizapp.screen.WelcomeScreen
 import com.google.accompanist.pager.ExperimentalPagerApi
 
@@ -27,7 +29,10 @@ fun SetupNavGraph(
             HomeScreen()
         }
         composable(route = Screen.Sign_Up.route){
-            // add
+            SignUpScreen()
+        }
+        composable(route = Screen.Quiz_Categories.route) {
+            Quiz_Categories()
         }
     }
 }
