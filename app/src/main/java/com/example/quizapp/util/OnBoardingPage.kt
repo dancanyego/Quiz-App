@@ -12,18 +12,18 @@ sealed class OnBoardingPage(
     object First : OnBoardingPage(
         image = R.drawable.first,
         title = "The Best Quizes",
-        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+        description = "The Best Place for Quizes To Test Your Brain."
     )
 
     object Second : OnBoardingPage(
         image = R.drawable.second,
-        title = "Coordination",
-        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+        title = "Quiz Categories",
+        description = "Our Quizes have the Best Categories From Where you Choose."
     )
 
     object Third : OnBoardingPage(
         image = R.drawable.third,
-        title = "Dialogue",
-        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+        title = "Grade",
+        description = "Check Your grade In The Grading section."
     )
 }

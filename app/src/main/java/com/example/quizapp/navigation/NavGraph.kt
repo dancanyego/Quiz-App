@@ -26,5 +26,8 @@ fun SetupNavGraph(
         composable(route = com.example.quizapp.navigation.Screen.Home.route) {
             HomeScreen()
         }
+        composable(route = Screen.Sign_Up.route){
+            // add
+        }
     }
 }
